@@ -6,7 +6,6 @@ import com.gamesense.api.config.SaveConfig;
 import com.gamesense.api.event.EventProcessor;
 import com.gamesense.api.setting.SettingsManager;
 import com.gamesense.api.util.font.CFontRenderer;
-import com.gamesense.api.util.misc.VersionChecker;
 import com.gamesense.api.util.player.enemy.Enemies;
 import com.gamesense.api.util.player.friend.Friends;
 import com.gamesense.api.util.render.CapeUtil;
@@ -31,7 +30,6 @@ public class GameSense {
 	public static final String MODNAME = "Valkyrie";
 	public static final String MODID = "valkyrie";
 	public static final String MODVER = "a0.0.1";
-	/** Official release starts with a "v", dev versions start with a "d" to bypass version check */
 
 	public static final Logger LOGGER = LogManager.getLogger(MODNAME);
 	public static final EventBus EVENT_BUS = new EventManager();
@@ -55,8 +53,7 @@ public class GameSense {
 		startClient();
 		LOGGER.info("Finished initialization for " + MODNAME + " " + MODVER + "!");
 	}
-
-	public VersionChecker versionChecker;
+	
 	public EventProcessor eventProcessor;
 	public CFontRenderer cFontRenderer;
 	public SettingsManager settingsManager;

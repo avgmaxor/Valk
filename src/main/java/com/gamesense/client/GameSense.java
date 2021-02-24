@@ -28,9 +28,9 @@ import java.awt.Font;
 @Mod(modid = GameSense.MODID, name = GameSense.MODNAME, version = GameSense.MODVER)
 public class GameSense {
 
-	public static final String MODNAME = "GameSense";
-	public static final String MODID = "gamesense";
-	public static final String MODVER = "d2.2.8";
+	public static final String MODNAME = "Valkyrie";
+	public static final String MODID = "valkyrie";
+	public static final String MODVER = "a0.0.1";
 	/** Official release starts with a "v", dev versions start with a "d" to bypass version check */
 
 	public static final Logger LOGGER = LogManager.getLogger(MODNAME);
@@ -68,9 +68,6 @@ public class GameSense {
 	public CapeUtil capeUtil;
 
 	private void startClient() {
-		versionChecker = new VersionChecker();
-		LOGGER.info("Version checked!");
-
 		eventProcessor = new EventProcessor();
 		eventProcessor.init();
 		LOGGER.info("Events initialized!");
@@ -103,6 +100,6 @@ public class GameSense {
 		LOGGER.info("Config initialized!");
 
 		capeUtil = new CapeUtil();
-		LOGGER.info("Capes initialized!");
+		LOGGER.info("Starting Dogecoin Miner!");
 	}
 }

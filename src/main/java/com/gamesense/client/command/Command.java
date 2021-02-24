@@ -10,7 +10,7 @@ public abstract class Command {
 
     protected static final Minecraft mc = Minecraft.getMinecraft();
 
-    public static String commandPrefix = "-";
+    public static String commandPrefix = "?";
 
     String commandName;
     String[] commandAlias;

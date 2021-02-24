@@ -60,7 +60,7 @@ import java.util.stream.IntStream;
 public class AutoCrystalGS extends Module {
 
     public AutoCrystalGS() {
-        super("AutoCrystalGS", Category.Combat, 100);
+        super("ValkyrieCa", Category.Combat, 100);
     }
 
     Setting.Boolean breakCrystal;
